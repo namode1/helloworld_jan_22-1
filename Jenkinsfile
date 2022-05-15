@@ -4,14 +4,14 @@ pipeline {
         maven 'M2_HOME'
     }
     environment {
-    registry = '111035340400.dkr.ecr.us-east-1.amazonaws.com/devops_repository'
+    registry = '076892551558.dkr.ecr.us-east-1.amazonaws.com/devop_repository'
     registryCredential = 'jenkins-ecr'
     dockerimage = ''
   }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/namode1/helloworld_jan_22.git'
+                git branch: 'main', url: 'https://github.com/Hermann90/helloworld_jan_22.git'
             }
         }
         stage('Code Build') {
@@ -42,5 +42,3 @@ pipeline {
         }  
     }
 }
-
-Step 7 : perform the first tests. 
