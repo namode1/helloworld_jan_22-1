@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
     registry = '111035340400.dkr.ecr.us-east-1.amazonaws.com/devops_repository'
-    registryCredential = 'eks-cluster-user'
+    registryCredential = 'dev-team'
     dockerimage = ''
   }
     stages {
